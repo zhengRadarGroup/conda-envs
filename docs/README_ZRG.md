@@ -67,10 +67,10 @@ python -m pip install jupyter_nbextensions_configurator #might give rise to an e
 python -m pip install -e utils/sardem #install sardem in editable mode
 ```
 
->[!warning] Potential Error
+> [!WARNING]
 > When executing the command `python -m pip install jupyter_nbextensions_configurator` , it might give rise to a dependency conflict that requires a package `pdflatex 0.1.3` to have another package `attrs<19.0,>=18.2`. If you manually try to change the version of `attrs` to `>=18.2`, this will then give rise to dependency conflict with other packages like `jsonschema`, `referencing` and `fiona`.
 
->[!note] Potential Solutions 
+>[!NOTE]
 > **Solution 1:** As `jupyter_nbextensions_configurator` is not a critical requirement, the error can be ignored for now and we can move on to the next step.
 > 
 >**Solution 2:** Putting all dependencies from conda-forge and pip into one `environment.yml` file and installing and managing the packages from that file.
@@ -105,10 +105,10 @@ smallbaselineApp.py -h   # test MintPy installation
 
 ### No "tmp" directory
 
->[!warning] filesystem error
+>[!WARNING] 
 >During the installation, you might encounter a filesystem error with the message `filesystem error: temp_directory_path: No such file or directory [/usr/tmp]`. This error most likely comes from the fact that either the folder `/usr/tmp/` does not exist or you don't have access to it.
 
->[!note] Solution
+>[!NOTE]
 >This can be solved by changing the `TMPDIR` environment variable by specifying path to a new temporary directory that is accessible to you. You can do this by executing `export TMPDIR=/path/to/new/tmpdir` command. An example `/path/to/new/tmpdir` could be `/home/your_netid/tmp`.
 ## References
 
