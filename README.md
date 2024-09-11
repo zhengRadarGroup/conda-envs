@@ -1,5 +1,6 @@
 ## conda-envs
 
+### For Zheng Radar Group, refer to [Installation guide for Zheng Radar Group](./docs/README_ZRG.md).
 Setup InSAR data processing codes on Linux / macOS / Windows using `conda` environments.
 
 ### 0. (For Windows only) [Install Windows Subsystem for Linux](./docs/wsl.md)
